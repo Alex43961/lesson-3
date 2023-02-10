@@ -38,7 +38,26 @@
 
 
 //! 4
-for (let i = 0; i <= 10; i++) {
-	for (j = 1; j <= 10; j++)
-	
+//nextPrime:
+//for (let i = 2; i <= 10; i++) {
+//	for (let j = 2; j < i; j++) {
+//		if (i % j == 0) {
+//			continue nextPrime;
+//		} 
+//	}
+//	console.log(i);	
+//}
+
+//! 5
+
+const userNumber = prompt("input your number");
+
+let sum = 1;
+
+for (let i = userNumber; i > 0; i = i - 1) {
+
+	if (userNumber === 0) continue;
+
+	sum = sum * i;
 }
+alert(sum);
